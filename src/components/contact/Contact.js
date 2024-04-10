@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -22,20 +22,20 @@ const Contact = () => {
   const handleSend = (e) => {
     e.preventDefault();
     if (username === "") {
-      setErrMsg("Username is required!");
+      setErrMsg("Nombre requerido!");
     } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
+      setErrMsg("Numero de teléfono requerido!");
     } else if (email === "") {
-      setErrMsg("Please give your Email!");
+      setErrMsg("Por favor déjanos tu Email!");
     } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
+      setErrMsg("Déjanos un válido Email!");
     } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
+      setErrMsg("Por favor dejanos el asunto!");
     } else if (message === "") {
-      setErrMsg("Message is required!");
+      setErrMsg("Mensaje es requerido!");
     } else {
       setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
+        `Gracias ${username}, tu mensaje fue enviado satisfactoriamente!`
       );
       setErrMsg("");
       setUsername("");
@@ -51,7 +51,7 @@ const Contact = () => {
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="CONTACT" des="Contact With Me" />
+        <Title title="COMUNICATE CON NOSOTROS" des="Contacto" />
       </div>
       <div className="w-full">
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
@@ -71,7 +71,7 @@ const Contact = () => {
               <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Your name
+                    Nombre
                   </p>
                   <input
                     onChange={(e) => setUsername(e.target.value)}
@@ -85,7 +85,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Phone Number
+                    Número de teléfono
                   </p>
                   <input
                     onChange={(e) => setPhoneNumber(e.target.value)}
@@ -114,7 +114,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Subject
+                  Asunto
                 </p>
                 <input
                   onChange={(e) => setSubject(e.target.value)}
@@ -128,7 +128,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Message
+                  Mensaje
                 </p>
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
@@ -145,7 +145,7 @@ const Contact = () => {
                   onClick={handleSend}
                   className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
-                  Send Message
+                  Enviar Mensaje
                 </button>
               </div>
               {errMsg && (
@@ -164,6 +164,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;
