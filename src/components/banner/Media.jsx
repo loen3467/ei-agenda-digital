@@ -8,13 +8,10 @@ const Media = () => {
         <h2 className="text-base uppercase font-titleFont mb-4">Búscanos en</h2>
         <div className="flex gap-4">
           <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
-            <FaLinkedinIn />
+            <a href="https://www.facebook.com/profile.php?id=61558151315691&mibextid=ZbWKwL">
+              {" "}
+              <FaFacebookF />
+            </a>
           </span>
         </div>
       </div>

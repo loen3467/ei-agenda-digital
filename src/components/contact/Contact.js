@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
 
@@ -45,10 +45,39 @@ const Contact = () => {
       setMessage("");
     }
   };
+
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
+
   return (
     <section
       id="contact"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      ref={sectionRef}
+      className={`w-full py-20 border-b-[1px] border-b-black ${
+        isVisible ? "animate-flip-up animate-duration-[2000ms]" : "opacity-0"
+      }`}
     >
       <div className="flex justify-center items-center text-center">
         <Title title="COMUNICATE CON NOSOTROS" des="Contacto" />
