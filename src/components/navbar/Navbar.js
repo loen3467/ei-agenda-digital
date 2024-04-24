@@ -9,15 +9,19 @@ import { navLinksdata } from "../../constants";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="w-full h-24 sticky top-0 z-50 bg-teal mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
+    <div className="w-full px-5 h-24 sticky top-0 z-50 bg-gradient-to-r from-[#005954] to-[#338b85] mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
+      <div className="flex items-center">
         <img src={logo} alt="logo" />
+        <div className="text-sky-300 text-2xl font-semibold">
+          Engineering Innovation
+        </div>
       </div>
+
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
             <li
-              className="text-base font-normal text-gray-450 tracking-wide cursor-pointer hover:text-designColor duration-300"
+              className="text-lg font-normal text-gray-450 tracking-wide cursor-pointer hover:text-designColor duration-300 "
               key={_id}
             >
               <Link
@@ -32,6 +36,11 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li className="text-lg font-normal text-gray-450 tracking-wide cursor-pointer hover:text-designColor duration-300">
+            <a href="https://www.facebook.com/p/Unidad-Educativa-T%C3%A9cnico-Human%C3%ADstico-Carlos-Palenque-Aviles-El-Alto-1-100087480277852/">
+              Iniciar sesión
+            </a>
+          </li>
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}

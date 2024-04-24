@@ -4,6 +4,7 @@ import Education from "./Education";
 import Skills from "./Skills";
 import Achievement from "./Achievement";
 import Experience from "./Experience";
+import { projectOne } from "../../assets/index";
 
 const Resume = () => {
   const [educationData, setEducationData] = useState(true);
@@ -48,16 +49,30 @@ const Resume = () => {
         <Title title="SOMOS UNA EMPRESA JOVEN" des="Nosotros" />
       </div>
       <div>
-        La empresa Engineers Innovation se fundó en el año 2023, se especializa
-        en el desarrollo de sistemas y proyectos de software en la ciudad de La
-        Paz. Se centra en crear soluciones innovadoras que automatizan y
-        optimizan procesos en diversas áreas, proporcionando así un valor
-        agregado significativo a sus clientes. Su principal objetivo es
-        aprovechar la tecnología para mejorar la eficiencia y la productividad
-        en diferentes sectores mediante el uso de herramientas y nuevas
-        tecnologías de desarrollo de software.
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between space-y-6 md:space-y-0">
+          <div className="md:mr-6">
+            <img
+              src={projectOne}
+              alt="Imagen de la empresa"
+              className="w-full md:w-auto"
+            />
+          </div>
+          <div className="max-w-lg">
+            <p className="text-xl text-gray-700 font-medium ">
+              La empresa Engineers Innovation se fundó en el año 2024, se
+              especializa en el desarrollo de sistemas y proyectos de software
+              en la ciudad de La Paz. Se centra en crear soluciones innovadoras
+              que automatizan y optimizan procesos en diversas áreas,
+              proporcionando así un valor agregado significativo a sus clientes.
+              Su principal objetivo es aprovechar la tecnología para mejorar la
+              eficiencia y la productividad en diferentes sectores mediante el
+              uso de herramientas y nuevas tecnologías de desarrollo de
+              software.
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
+      {/* <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           <li
             onClick={() =>
@@ -122,7 +137,7 @@ const Resume = () => {
       {educationData && <Education />}
       {skillData && <Skills />}
       {achievementData && <Achievement />}
-      {experienceData && <Experience />}
+      {experienceData && <Experience />} */}
     </section>
   );
 };

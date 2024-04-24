@@ -11,15 +11,33 @@ import Testimonial from "./components/tesimonial/Testimonial";
 
 function App() {
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText px-4">
+    <div className="w-full h-auto bg-bodyColor text-lightText">
       <Navbar />
       <div className="max-w-screen-xl mx-auto">
         <Banner />
-        <Features />
+      </div>
+      <div className="bg-[#d5ffff]">
+        <div className="max-w-screen-xl mx-auto">
+          <Features />
+        </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto">
         <Projects />
-        <Resume />
+      </div>
+      <div className="bg-[#d5ffff]">
+        <div className="max-w-screen-xl mx-auto">
+          <Resume />
+        </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto">
         <Testimonial />
-        <Contact />
+      </div>
+      <div className="bg-[#d5ffff]">
+        <div className="max-w-screen-xl mx-auto">
+          <Contact />
+        </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto">
         <Footer />
         <FooterBottom />
       </div>
