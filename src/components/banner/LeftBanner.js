@@ -13,14 +13,14 @@ const LeftBanner = () => {
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className=" text-lg font-normal">BIENVENIDO</h4>
-        <h1 className="text-6xl font-bold text-white">
+        <h4 className="text-designColor text-lg font-normal">BIENVENIDO</h4>
+        <h1 className="text-6xl font-bold text-darkText">
           Hola, somos{" "}
           <span className="text-designColor capitalize">
             Engineering Innovation
           </span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
+        <h2 className="text-4xl font-bold text-darkText">
           somos <span>{text}</span>
           <Cursor
             cursorBlinking="false"
@@ -28,7 +28,7 @@ const LeftBanner = () => {
             cursorColor="#ff014f"
           />
         </h2>
-        <p className="text-base font-bodyFont leading-6 tracking-wide">
+        <p className="text-darkText font-bodyFont leading-6 tracking-wide">
           Desarrollamos soluciones digitales para potenciar la gestión
           educativa, promoviendo la eficiencia y la colaboración en las unidades
           educativas.

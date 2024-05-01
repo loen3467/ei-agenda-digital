@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+
   theme: {
     extend: {
       screens: {
@@ -18,12 +19,13 @@ module.exports = {
         titleFont: ["Montserrat", "sans-serif"],
       },
       colors: {
-        bodyColor: "#8ae0db",
+        primaryColor: "#003785",
+        secundaryColor: "#2196f3",
+        bodyColor: "#b9ffff",
+        bodyColor2: "#81c9fa",
         lightText: "#ffffff",
-        boxBg:
-          "linear-gradient(90deg, rgba(104,194,255,1) 0%, rgba(138,179,207,1) 50%, rgba(228,235,240,1) 100%)",
+        darkText: "#1465bb",
         designColor: "#000000",
-        teal: "#0f766e",
       },
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",

@@ -127,7 +127,7 @@ const Testimonial = () => {
         {/* ================ Slider One ================== */}
         <Slider {...settings}>
           <div className="w-full">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-gradient-to-r from-[#005954] to-[#5dc1b9] p-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-gradient-to-r from-primaryColor to-secundaryColor p-8">
               <img
                 src="https://scontent.flpb2-1.fna.fbcdn.net/v/t39.30808-6/313868290_102859905973352_6905520291410162940_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Tjs73mgFVuIQ7kNvgGoQLdJ&_nc_ht=scontent.flpb2-1.fna&oh=00_AfBKrJrzYljCh_PUWjRxyhxZqh2_PbM9c75TqEDBceBVxg&oe=662EA312"
                 alt="Colegio 1"

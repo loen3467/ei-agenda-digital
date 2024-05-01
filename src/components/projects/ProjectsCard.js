@@ -4,7 +4,7 @@ import { FaGlobe } from "react-icons/fa";
 
 const ProjectsCard = ({ title, des, src }) => {
   return (
-    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#005954] group hover:bg-gradient-to-b hover:from-[#338b85] hover:to-[#005954] transition-colors duration-1000">
+    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-primaryColor group hover:bg-gradient-to-b hover:from-secundaryColor hover:to-primaryColor transition-colors duration-1000">
       <a href="https://www.youtube.com/watch?v=gNfBwhCnB6o&ab_channel=CreativeMindly">
         <div className="w-full h-[80%] overflow-hidden rounded-lg">
           <img

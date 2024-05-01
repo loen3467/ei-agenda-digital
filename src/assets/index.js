@@ -1,6 +1,7 @@
 import logo from "./images/logo_eii.png";
 import bannerImg from "./images/app.png";
-import projectOne from "./images/projects/logo_agenda_digital.jpg";
+import banner from "./images/banner.png";
+import projectOne from "./images/logo_ei_grande.png";
 import projectTwo from "./images/projects/logo_ad2.jpg";
 import projectThree from "./images/projects/logo_ad3.jpg";
 import testimonialOne from "./images/testmonial/testimonialOne.png";
@@ -18,6 +19,7 @@ import colaboracion from "./images/caracteristicas/colaboracion.jpg";
 export {
   logo,
   bannerImg,
+  banner,
   projectOne,
   projectTwo,
   projectThree,

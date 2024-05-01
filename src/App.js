@@ -8,15 +8,32 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Testimonial from "./components/tesimonial/Testimonial";
+import { banner } from "./assets";
 
 function App() {
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText">
+    <div className="w-full h-auto bg-white text-lightText">
       <Navbar />
-      <div className="max-w-screen-xl mx-auto">
-        <Banner />
+      <div
+        style={{
+          backgroundImage: `url('${banner}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="max-w-screen-xl mx-auto">
+          <Banner />
+        </div>
       </div>
-      <div className="bg-[#d5ffff]">
+      <div
+        className="bg-bodyColor2"
+        style={{
+          backgroundImage:
+            "url(https://img.freepik.com/vector-premium/fondo-abstracto-azul-moderno-banner-fondo-diseno-banner-abstracto-azul-fluido-geometrico-moderno_181182-28920.jpg?w=1480)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="max-w-screen-xl mx-auto">
           <Features />
         </div>
@@ -24,7 +41,7 @@ function App() {
       <div className="max-w-screen-xl mx-auto">
         <Projects />
       </div>
-      <div className="bg-[#d5ffff]">
+      <div className="bg-bodyColor2">
         <div className="max-w-screen-xl mx-auto">
           <Resume />
         </div>
@@ -32,7 +49,7 @@ function App() {
       <div className="max-w-screen-xl mx-auto">
         <Testimonial />
       </div>
-      <div className="bg-[#d5ffff]">
+      <div className="bg-bodyColor2">
         <div className="max-w-screen-xl mx-auto">
           <Contact />
         </div>
