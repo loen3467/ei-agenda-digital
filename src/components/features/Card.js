@@ -2,12 +2,12 @@ import React from "react";
 
 const Card = ({ item: { title, des, icon } }) => {
   return (
-    <div className="w-full px-12 h-80 py-10 rounded-lg shadow-shadowOne flex items-center bg-gradient-to-r from-primaryColor to-secundaryColor group hover:bg-gradient-to-b hover:from-secundaryColor hover:to-primaryColor transition-colors duration-100 group overflow-y-hidden">
+    <div className="w-full px-12 h-80 py-10 rounded-lg shadow-shadowOne flex items-center bg-gradient-to-r from-darkText to-bodyColor2 group hover:bg-gradient-to-b hover:from-secundaryColor hover:to-primaryColor transition-colors duration-100 group overflow-y-hidden">
       <div className="h-100">
-        <div className="flex h-full flex-col gap-10 translate-y-16 group-hover:translate-y-[-130px] transition-transform duration-1000">
-          <div className="w-full h-30 flex flex-col justify-between">
+        <div className="flex h-full flex-col gap-12 translate-y-16 group-hover:translate-y-[-130px] transition-transform duration-1000">
+          <div className="w-full h-50 flex flex-col justify-between">
             {icon ? (
-              <div className="text-5xl text-designColor">
+              <div className="text-5xl text-designColor pb-2">
                 <img src={icon} />
               </div>
             ) : (
@@ -20,7 +20,7 @@ const Card = ({ item: { title, des, icon } }) => {
             )}
           </div>
           <div className="flex flex-col gap-6">
-            <h2 className="text-xl md:text-2xl font-titleFont font-bold text-gray-300">
+            <h2 className="text-xl md:text-2xl font-titleFont font-bold text-lightText">
               {title}
             </h2>
             <p className="text-xl text-gray-50">{des}</p>

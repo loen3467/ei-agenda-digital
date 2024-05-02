@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Title from "../layouts/Title";
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { logoAgenda, projectTwo, projectThree } from "../../assets/index";
 import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
@@ -44,7 +44,7 @@ const Projects = () => {
           title="AGENDA DIGITAL EN LA UNIDAD EDUCATIVA 'CANADÁ'"
           des="
           La Agenda Digital en la Unidad Educativa 'Canadá' impulsa la integración de tecnología en el aula, fomentando la innovación y el aprendizaje digital entre los estudiantes."
-          src={projectOne}
+          src={logoAgenda}
         />
         <ProjectsCard
           title="AGENDA DIGITAL EN LA UNIDAD EDUCATIVA 'GUALBERTO VILLARRUEL'"

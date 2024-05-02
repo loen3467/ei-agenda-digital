@@ -97,6 +97,9 @@ const Contact = () => {
                   {successMsg}
                 </p>
               )}
+              <h1 className="text-xl font-medium">
+                ENVÍANOS TU COMENTARIO O SUGERENCIA
+              </h1>
               <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-gray-50 uppercase tracking-wide">

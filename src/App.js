@@ -26,10 +26,9 @@ function App() {
         </div>
       </div>
       <div
-        className="bg-bodyColor2"
         style={{
           backgroundImage:
-            "url(https://img.freepik.com/vector-premium/fondo-abstracto-azul-moderno-banner-fondo-diseno-banner-abstracto-azul-fluido-geometrico-moderno_181182-28920.jpg?w=1480)",
+            "url(https://img.freepik.com/vector-premium/maqueta-abstracta-concepto-fondo-degradado-colorido-pastel-su-diseno-grafico_29865-3528.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -38,18 +37,53 @@ function App() {
           <Features />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto">
-        <Projects />
+      <div
+        style={{
+          backgroundImage:
+            "url(https://img.freepik.com/vector-premium/fondo-banner-web-azul-plano-colorido-plantilla-fondo-patron-banner-diseno-grafico-abstracto-vector_181182-18561.jpg?w=1480)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="max-w-screen-xl mx-auto">
+          <Projects />
+        </div>
       </div>
-      <div className="bg-bodyColor2">
+
+      <div
+        style={{
+          backgroundImage:
+            "url(https://img.freepik.com/vector-premium/maqueta-abstracta-concepto-fondo-degradado-colorido-pastel-su-diseno-grafico_29865-3528.jpg",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="max-w-screen-xl mx-auto">
           <Resume />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto">
-        <Testimonial />
+
+      <div
+        style={{
+          backgroundImage:
+            "url(https://img.freepik.com/vector-premium/fondo-banner-web-azul-plano-colorido-plantilla-fondo-patron-banner-diseno-grafico-abstracto-vector_181182-18561.jpg?w=1480",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="max-w-screen-xl mx-auto">
+          <Testimonial />
+        </div>
       </div>
-      <div className="bg-bodyColor2">
+
+      <div
+        style={{
+          backgroundImage:
+            "url(https://img.freepik.com/vector-premium/maqueta-abstracta-concepto-fondo-degradado-colorido-pastel-su-diseno-grafico_29865-3528.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="max-w-screen-xl mx-auto">
           <Contact />
         </div>

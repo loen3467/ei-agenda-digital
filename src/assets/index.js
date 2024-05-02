@@ -8,6 +8,7 @@ import testimonialOne from "./images/testmonial/testimonialOne.png";
 import testimonialTwo from "./images/testmonial/testimonialTwo.png";
 import quote from "./images/testmonial/quote.png";
 import contactImg from "./images/contact/contactImg.png";
+import logoAgenda from "./images/projects/logo_agenda_digital.jpg";
 
 import innovacion from "./images/caracteristicas/innovacion.jpg";
 import compromiso from "./images/caracteristicas/compromiso.jpg";
@@ -33,4 +34,5 @@ export {
   etica,
   talento_experiencia,
   colaboracion,
+  logoAgenda,
 };

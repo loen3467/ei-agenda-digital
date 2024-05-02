@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 address-info-row text-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 address-info-row text-xl text-darkText">
         <div className="flex items-center address-info">
           <span className="btn bg-blue-700 p-2 rounded-full">
             <IoLocationSharp />
