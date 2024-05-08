@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { logo } from "../../assets/index";
 import Media from "../banner/Media";

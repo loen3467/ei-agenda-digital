@@ -131,7 +131,7 @@ const Testimonial = () => {
               <img src={ue1} alt="Colegio 1" className="w-full h-auto" />
               <img src={ue2} alt="Colegio 2" className="w-full h-auto" />
               <img src={ue3} alt="Colegio 3" className="w-full h-auto" />
-              <img src={ue4} className="w-full h-auto" />
+              <img src={ue4} alt="Colegio 4" className="w-full h-auto" />
               <img src={ue5} alt="Colegio 5" className="w-full h-auto" />
               <img src={ue6} alt="Colegio 6" className="w-full h-auto" />
             </div>
