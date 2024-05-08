@@ -3,10 +3,10 @@ import Title from "../layouts/Title";
 import { projectOne } from "../../assets/index";
 
 const Resume = () => {
-  const [educationData, setEducationData] = useState(true);
+  /* const [educationData, setEducationData] = useState(true);
   const [skillData, setSkillData] = useState(false);
   const [experienceData, setExperienceData] = useState(false);
-  const [achievementData, setAchievementData] = useState(false);
+  const [achievementData, setAchievementData] = useState(false); */
 
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
