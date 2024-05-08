@@ -22,17 +22,17 @@ const Contact = () => {
   const handleSend = (e) => {
     e.preventDefault();
     if (username === "") {
-      setErrMsg("Nombre requerido!");
+      setErrMsg("!Nombre requerido!");
     } else if (phoneNumber === "") {
-      setErrMsg("Numero de teléfono requerido!");
+      setErrMsg("!Numero de teléfono requerido!");
     } else if (email === "") {
-      setErrMsg("Por favor déjanos tu Email!");
+      setErrMsg("!Por favor déjanos tu Email!");
     } else if (!emailValidation(email)) {
-      setErrMsg("Déjanos un válido Email!");
+      setErrMsg("!Déjanos un email válido!");
     } else if (subject === "") {
-      setErrMsg("Por favor dejanos el asunto!");
+      setErrMsg("!Por favor dejanos el asunto!");
     } else if (message === "") {
-      setErrMsg("Mensaje es requerido!");
+      setErrMsg("!Mensaje es requerido!");
     } else {
       setSuccessMsg(
         `Gracias ${username}, tu mensaje fue enviado satisfactoriamente!`
@@ -175,7 +175,7 @@ const Contact = () => {
               <div className="w-full">
                 <button
                   onClick={handleSend}
-                  className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-50 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
+                  className="w-full h-12 bg-sky-300 rounded-lg text-base text-gray-800 font-medium tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
                   Enviar Mensaje
                 </button>

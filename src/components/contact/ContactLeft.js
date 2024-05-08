@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { contactImg } from "../../assets/index";
+import Media from "../banner/Media";
 
 const ContactLeft = () => {
   return (
@@ -32,16 +33,7 @@ const ContactLeft = () => {
           </span>
         </p>
       </div>
-      <div className="flex flex-col gap-4">
-        <h2 className="text-base uppercase font-titleFont mb-4">Búscanos</h2>
-        <div className="flex gap-4">
-          <a href="https://www.facebook.com/profile.php?id=61558151315691&mibextid=ZbWKwL">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-          </a>
-        </div>
-      </div>
+      <Media />
     </div>
   );
 };

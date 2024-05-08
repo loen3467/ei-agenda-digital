@@ -2,23 +2,18 @@ import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { logo } from "../../assets/index";
+import Media from "../banner/Media";
 
 const Footer = () => {
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-2 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
         <img className="w-32" src={logo} alt="logo" />
-        <div className="flex gap-4">
-          <a href="https://www.facebook.com/profile.php?id=61558151315691&mibextid=ZbWKwL">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-          </a>
-        </div>
+        <Media />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 address-info-row text-xl text-darkText">
         <div className="flex items-center address-info">
-          <span className="btn bg-blue-700 p-2 rounded-full">
+          <span className="btn bg-sky-200 p-2 rounded-full">
             <IoLocationSharp />
           </span>
           <p className="ml-4">
@@ -34,7 +29,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex items-center address-info">
-          <span className="btn bg-blue-700 p-2 rounded-full">
+          <span className="btn bg-sky-200 p-2 rounded-full">
             <IoLocationSharp />
           </span>
           <p className="ml-4">

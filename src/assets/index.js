@@ -17,6 +17,13 @@ import etica from "./images/caracteristicas/etica.jpg";
 import talento_experiencia from "./images/caracteristicas/talento_experiencia.jpg";
 import colaboracion from "./images/caracteristicas/colaboracion.jpg";
 
+import ue1 from "./images/colegios/ue1.jpg";
+import ue2 from "./images/colegios/ue2.png";
+import ue3 from "./images/colegios/ue3.jpg";
+import ue4 from "./images/colegios/ue4.jpg";
+import ue5 from "./images/colegios/ue5.jpg";
+import ue6 from "./images/colegios/ue6.png";
+
 export {
   logo,
   bannerImg,
@@ -35,4 +42,10 @@ export {
   talento_experiencia,
   colaboracion,
   logoAgenda,
+  ue1,
+  ue2,
+  ue3,
+  ue4,
+  ue5,
+  ue6,
 };

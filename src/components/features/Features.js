@@ -38,7 +38,7 @@ const Features = () => {
       }`}
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="¿QUÉ NOS DIFERENCIA?" des="Características" />
+        <Title title="¿QUÉ NOS DIFERENCIA?" des="Principios" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
