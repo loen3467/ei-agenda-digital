@@ -1,6 +1,3 @@
-import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe } from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
 import { innovacion } from "../assets/index";
 import { compromiso } from "../assets/index";
 import { enfoque_cliente } from "../assets/index";

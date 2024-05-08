@@ -1,5 +1,4 @@
 import React from "react";
-import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
 
 const ProjectsCard = ({ title, des, src }) => {
@@ -10,7 +9,7 @@ const ProjectsCard = ({ title, des, src }) => {
           <img
             className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"
             src={src}
-            alt="src"
+            alt="Imagen no encontrada"
           />
         </div>
       </a>

@@ -8,7 +8,11 @@ const Card = ({ item: { title, des, icon } }) => {
           <div className="w-full h-50 flex flex-col justify-between">
             {icon ? (
               <div className="text-5xl text-designColor">
-                <img className="h-[160px] w-full" src={icon} />
+                <img
+                  className="h-[160px] w-full"
+                  src={icon}
+                  alt="Imagen no encontrada"
+                />
               </div>
             ) : (
               <>
