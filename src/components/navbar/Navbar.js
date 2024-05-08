@@ -37,7 +37,9 @@ const Navbar = () => {
             </li>
           ))}
           <li className="text-lg font-normal text-gray-450 tracking-wide cursor-pointer hover:text-designColor duration-300">
-            <a href="http://localhost:5173/login">Iniciar sesión</a>
+            <a href="https://agendadigital300000.000webhostapp.com/agendas">
+              Iniciar sesión
+            </a>
           </li>
         </ul>
         <span
