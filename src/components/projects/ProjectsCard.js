@@ -7,6 +7,7 @@ const ProjectsCard = ({ title, des, src }) => {
       <a
         href="https://www.youtube.com/watch?v=gNfBwhCnB6o&ab_channel=CreativeMindly"
         target="_blank"
+        rel="noreferrer"
       >
         <div className="w-full h-[80%] overflow-hidden rounded-lg">
           <img

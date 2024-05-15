@@ -11,6 +11,7 @@ const Media = () => {
           <a
             href="https://www.facebook.com/profile.php?id=61558151315691&mibextid=ZbWKwL"
             target="_blank"
+            rel="noreferrer"
           >
             <span className="animate-shake animate-infinite animate-duration-[2000ms] animate-ease-linear bannerIcon text-white bg-[#1a7bff]">
               <FaFacebookF />
