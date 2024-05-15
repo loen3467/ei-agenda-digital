@@ -5,7 +5,7 @@ const Media = () => {
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
       <div>
         <h2 className="text-darkText uppercase font-medium mb-4">
-          Búscanos en
+          Búscanos en...
         </h2>
         <div className="flex gap-4">
           <a
