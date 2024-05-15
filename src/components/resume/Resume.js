@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
 import Title from "../layouts/Title";
 import { projectOne } from "../../assets/index";
 
@@ -8,44 +7,13 @@ const Resume = () => {
   const [experienceData, setExperienceData] = useState(false);
   const [achievementData, setAchievementData] = useState(false); */
 
-  const sectionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.4 }
-    );
-
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
-
   return (
-    <section
-      id="resume"
-      ref={sectionRef}
-      className={`w-full py-20 border-b-[1px] border-b-black ${
-        isVisible ? "animate-flip-up animate-duration-[2000ms]" : "opacity-0"
-      }`}
-    >
+    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
         <Title title="SOMOS UNA EMPRESA JOVEN" des="Nosotros" />
       </div>
       <div>
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between space-y-6 md:space-y-0">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between space-y-6 md:space-y-0 py-20">
           <div className="md:mr-6">
             <img
               src={projectOne}

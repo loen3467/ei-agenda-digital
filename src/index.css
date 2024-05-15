@@ -28,3 +28,19 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.banner-section {
+  background-image: url("../src/assets/images/backgrounds/banner.png");
+  background-size: cover;
+  background-position: center;
+}
+.features-section {
+  background-image: url("https://img.freepik.com/fotos-premium/diseno-fondo-banner-abstracto-tranquilo-su-proyecto-creativo_893755-1870.jpg?w=1380");
+  background-size: cover;
+  background-position: center;
+}
+.projects-section {
+  background-image: url("https://img.freepik.com/free-vector/abstract-background-design_361591-2110.jpg?w=1480&t=st=1715527606~exp=1715528206~hmac=87b22fe9e5611c4c26b61ef2ea2ef3d679e4e605553319fec0b82bbfd4a13791");
+  background-size: cover;
+  background-position: center;
+}

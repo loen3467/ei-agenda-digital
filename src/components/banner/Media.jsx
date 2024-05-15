@@ -8,8 +8,11 @@ const Media = () => {
           Búscanos en
         </h2>
         <div className="flex gap-4">
-          <a href="https://www.facebook.com/profile.php?id=61558151315691&mibextid=ZbWKwL">
-            <span className="bannerIcon text-white bg-[#1a7bff]">
+          <a
+            href="https://www.facebook.com/profile.php?id=61558151315691&mibextid=ZbWKwL"
+            target="_blank"
+          >
+            <span className="animate-shake animate-infinite animate-duration-[2000ms] animate-ease-linear bannerIcon text-white bg-[#1a7bff]">
               <FaFacebookF />
             </span>
           </a>

@@ -1,6 +1,5 @@
 import logo from "./images/logo_eii.png";
 import bannerImg from "./images/app.png";
-import banner from "./images/banner.png";
 import projectOne from "./images/logo_ei_grande.png";
 import projectTwo from "./images/projects/logo_ad2.jpg";
 import projectThree from "./images/projects/logo_ad3.jpg";
@@ -27,7 +26,6 @@ import ue6 from "./images/colegios/ue6.png";
 export {
   logo,
   bannerImg,
-  banner,
   projectOne,
   projectTwo,
   projectThree,

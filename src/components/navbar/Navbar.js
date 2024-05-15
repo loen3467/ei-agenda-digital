@@ -10,7 +10,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="w-full px-5 h-24 sticky top-0 z-50 bg-gradient-to-r from-primaryColor to-secundaryColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div className="flex items-center">
+      <div className="animate-pulse animate-infinite animate-ease-linear flex items-center">
         <img src={logo} alt="logo" />
         <div className="text-sky-300 text-2xl font-semibold">
           Engineering Innovation

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
@@ -87,38 +87,10 @@ const Testimonial = () => {
     ),
   };
 
-  const sectionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.4 }
-    );
-
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
-
   return (
     <section
       id="testimonial"
-      ref={sectionRef}
-      className={`w-full py-20 border-b-[1px] border-b-black ${
-        isVisible ? "animate-flip-up animate-duration-[2000ms]" : "opacity-0"
-      }`}
+      className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
         <Title title="¿QUE DICEN NUESTROS CLIENTES?" des="Nuestros Clientes" />

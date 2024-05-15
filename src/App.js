@@ -8,86 +8,56 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Testimonial from "./components/tesimonial/Testimonial";
-import { banner } from "./assets";
+import Fade from "react-reveal";
 
 function App() {
   return (
     <div className="w-full h-auto bg-white text-lightText">
       <Navbar />
-      <div
-        style={{
-          backgroundImage: `url('${banner}')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="banner-section">
         <div className="max-w-screen-xl mx-auto">
           <Banner />
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage:
-            "url(https://img.freepik.com/vector-premium/maqueta-abstracta-concepto-fondo-degradado-colorido-pastel-su-diseno-grafico_29865-3528.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="features-section">
         <div className="max-w-screen-xl mx-auto">
-          <Features />
+          <Fade up>
+            <Features />
+          </Fade>
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage:
-            "url(https://img.freepik.com/vector-premium/fondo-banner-web-azul-plano-colorido-plantilla-fondo-patron-banner-diseno-grafico-abstracto-vector_181182-18561.jpg?w=1480)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="projects-section">
         <div className="max-w-screen-xl mx-auto">
-          <Projects />
+          <Fade right>
+            <Projects />
+          </Fade>
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundImage:
-            "url(https://img.freepik.com/vector-premium/maqueta-abstracta-concepto-fondo-degradado-colorido-pastel-su-diseno-grafico_29865-3528.jpg",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="features-section">
         <div className="max-w-screen-xl mx-auto">
-          <Resume />
+          <Fade left>
+            <Resume />
+          </Fade>
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundImage:
-            "url(https://img.freepik.com/vector-premium/fondo-banner-web-azul-plano-colorido-plantilla-fondo-patron-banner-diseno-grafico-abstracto-vector_181182-18561.jpg?w=1480",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="projects-section">
         <div className="max-w-screen-xl mx-auto">
-          <Testimonial />
+          <Fade down>
+            <Testimonial />
+          </Fade>
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundImage:
-            "url(https://img.freepik.com/vector-premium/maqueta-abstracta-concepto-fondo-degradado-colorido-pastel-su-diseno-grafico_29865-3528.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="features-section">
         <div className="max-w-screen-xl mx-auto">
-          <Contact />
+          <Fade up>
+            <Contact />
+          </Fade>
         </div>
       </div>
+
       <div className="max-w-screen-xl mx-auto">
         <Footer />
         <FooterBottom />
