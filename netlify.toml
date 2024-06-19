@@ -1,3 +1,10 @@
 [build]
-  command = "npm install --force && npm run build" && "npm i --legacy-peer-deps."
+  command = "npm install --force && npm run build"
   publish = "public"
+
+[build.environment]
+  NODE_VERSION = "20.12.2"
+  NPM_FLAGS = "--prefer-offline --no-audit"
+
+[context.production.environment]
+  NODE_ENV = "production"
